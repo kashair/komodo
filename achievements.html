@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Achievements of Komodo - Low-Poly 3D Modeler & Texturer.">
+    <title>Achievements | Komodo</title>
+    <link rel="icon" type="image/png" href="assets/misc/PFP.png">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <style>
+        .achievements-section {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+        .achievement-frame {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            padding: 2rem;
+            background-color: var(--frame-bg);
+            border: 4px solid var(--border-color);
+            box-shadow: 
+                inset -4px -4px 0px 0px rgba(0, 0, 0, 0.3),
+                inset 4px 4px 0px 0px rgba(255, 255, 255, 0.1),
+                8px 8px 0px 0px var(--border-color);
+        }
+        .achievement-icon {
+            width: 120px;
+            height: 120px;
+            object-fit: contain;
+            filter: drop-shadow(4px 4px 0px rgba(0, 0, 0, 0.5));
+        }
+        .achievement-info {
+            flex: 1;
+            text-align: left;
+        }
+        .achievement-info h3 {
+            font-size: 2rem;
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+            text-shadow: 2px 2px 0px var(--border-color);
+        }
+        .achievement-info p {
+            font-size: 1.2rem;
+            color: #d0d0d0;
+        }
+        @media (max-width: 600px) {
+            .achievement-frame {
+                flex-direction: column;
+                text-align: center;
+            }
+            .achievement-info {
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="crt-overlay"></div>
+    <nav class="navbar">
+        <div class="nav-brand">Komodo</div>
+        <ul class="nav-links">
+            <li><a href="index.html#home">Home</a></li>
+            <li><a href="index.html#works">Works</a></li>
+            <li><a href="achievements.html" style="color: var(--primary-color);">Achievements</a></li>
+            <li><a href="index.html#palette">Palette</a></li>
+            <li><a href="hire.html">Hire Me</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="section">
+            <h2 class="section-title">Achievements</h2>
+            <div class="achievements-section">
+                
+                <!-- Unify Devs Achievement -->
+                <div class="achievement-frame">
+                    <img src="assets/misc/unify-devs-icon.webp" alt="Unify Devs Icon" class="achievement-icon" loading="lazy">
+                    <div class="achievement-info">
+                        <h3>Experienced Modeler</h3>
+                        <p>Recognized as an "Experienced Modeler" in the Unify Devs community of over 6,000 members.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Komodo. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
